@@ -93,13 +93,6 @@ function ThemeColor() {
             <div className="bottom" onClick={colorClick}>
                 <div className="settings"><FontAwesomeIcon icon={faPaintBrush} /></div>
             </div>
-            <div className="theme-rtl">
-                <Title Class="rtl-title" Name="Theme RTL" />
-                <label className="switch">
-                    <input type="checkbox" onClick={rtlClick} />
-                    <span id="slider" ></span>
-                </label>
-            </div>
         </div>
     );
 }

@@ -62,14 +62,13 @@ function Login(props) {
             <Tabs>
                 <TabList>
                     <Tab>Login</Tab>
-                    <Tab>Register</Tab>
                 </TabList>
 
                 <TabPanel>
                     <div className="tabfirst-block">
-                        <Title Class="tab-title" Name="Welcome TouchWorks" />
-                        <Description Class="tab-dec" Name="Please login to continue" />
-                        <button type="button" className="google login-btn1">
+                        <Title Class="tab-title" Name="Bem Vindo a TouchWorks" />
+                        <Description Class="tab-dec" Name="Faça o login para continuar" />
+                        {/*<button type="button" className="google login-btn1">
                             <Image Path={GoogleImg} Class="login-img" />
                             Sign in with Google
                         </button>
@@ -80,7 +79,7 @@ function Login(props) {
                         <button type="button" className="facebook login-btn1">
                             <Image Path={Facebook} Class="login-img" />
                             Sign in with Facebook
-                        </button>
+                        </button>*/}
                         <div className="form-wrapper">
                             <FormGroup>
                                 <InputBox
@@ -107,7 +106,7 @@ function Login(props) {
                                     id="exCustomCheckbox"
                                     label="Remember Me"
                                 />
-                                <button type="button" className="forget-password">Forget Password</button>
+                                <button type="button" className="forget-password">Esqueceu a senha?</button>
                             </FormGroup>
                             <button type="button" className="login-btn gradient-color" onClick={loginWithFirebase}>Login</button>
                         </div>
