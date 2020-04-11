@@ -9,13 +9,15 @@ import ContactBackgroundImages from '../../data/contact';
 import '../contact/contact.scss';
 
 
+
 function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [errors, setErrors] = useState({});
 
-    const handelSubmit = () => {
+    
+ const handelSubmit = () => {
         const error = {}
         if (!name) {
             error.name = 'First Name field shouldn’t be empty';
@@ -30,11 +32,14 @@ function Contact() {
         if (error) {
             setErrors(error)
         } else {
-            setName('');
-            setEmail('');
-            setMessage('');
+        
+   
         }
     }
+
+
+    
+    
 
     return (
         <section className="contact-wrapper" id="contact">
@@ -54,24 +59,24 @@ function Contact() {
                         <div className="contact-content-block main-title-wrapper">
                             <Subtitle
                                 Class="sitemain-subtitle"
-                                Name="Send us mesage for any Info"
+                                Name="O que você precisa?"
                             />
-                            <Subtitle
+                            {/*<Subtitle
                                 Class="site-subtitle2"
-                                Name="Call us for any emergency"
+                                Name=""
                             />
                             <Description
                                 Class="contact-dec"
-                                Name="+1 123 - 456 - 7890"
-                            />
+                                Name=""
+                            />*/}
                             <div className="form">
                                 <Form method="POST">
                                     <FormGroup>
-                                        <Title Class="form-label" Name="Name *" />
+                                        <Title Class="form-label" Name="Nome *" />
                                         <InputBox
                                             Type="text"
                                             Name="name"
-                                            PlaceHolder="John Doe"
+                                            PlaceHolder=""
                                             value={name}
                                             ChangeValue={setName}
                                             Class={errors && errors.name && 'error'}
@@ -82,18 +87,18 @@ function Contact() {
                                         <InputBox
                                             Type="text"
                                             Name="email"
-                                            PlaceHolder="example@gmail.com"
+                                            PlaceHolder="exemplo@email.com"
                                             value={email}
                                             ChangeValue={setEmail}
                                             Class={errors && errors.email && 'error'}
                                         />
                                     </FormGroup>
                                     <FormGroup>
-                                        <Title Class="form-label" Name="Message *" />
+                                        <Title Class="form-label" Name="Mensagem *" />
                                         <InputBox
                                             Type="textarea"
                                             Name="text"
-                                            PlaceHolder="write your message"
+                                            PlaceHolder="Descreva como podemos te ajudar"
                                             Class={`textbox ${errors && errors.message && 'error'}`}
                                             value={message}
                                             ChangeValue={setMessage}
@@ -103,7 +108,7 @@ function Contact() {
                             </div>
                             <Button
                                 Class="button1 btn button2 gradient-color"
-                                Name="SUBMIT"
+                                Name="ENVIAR"
                                 Clickble={handelSubmit}
                                 BtnIcon="btn-icon"
                             />

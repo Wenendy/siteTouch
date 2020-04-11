@@ -1,4 +1,4 @@
-import { faLightbulb, faCalendar, faGavel } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb, faGrinBeam, faShareAltSquare } from '@fortawesome/free-solid-svg-icons';
 import Img1 from "../../public/assets/images/blog/blog1.png";
 import Img2 from "../../public/assets/images/blog/blog2.png";
 import Img3 from "../../public/assets/images/blog/blog3.png";
@@ -9,28 +9,22 @@ const BlogData = [
     "id": 1,
     "img": Img1,
     "Icon": faLightbulb,
-    "title": "Bussines Ideas & Innovation",
-    "subtitle": "Williamson",
-    "subcontent": "Web designer",
-    "content": "Lorem Ipsum is simply dummy text of the & printing typesetting industry. Lorem Ipsum has been the industry's                standard dummy text ever since the 1500s, when an unknown",
+    "title": "Novas Ideias",
+    "content": "Soluções inovadoras para aumentar o desempenho do call center e reduzir o tempo de atendimento e rechamadas.",
   },
   {
     "id": 2,
     "img": Img2,
-    "Icon": faCalendar,
-    "title": "Gives best Financial solution",
-    "subtitle": "Miranda Roy",
-    "subcontent": "Web developer",
-    "content": "Lorem Ipsum is simply dummy text of the & printing typesetting industry. Lorem Ipsum has been the industry's                standard dummy text ever since the 1500s, when an unknown",
+    "Icon": faGrinBeam,
+    "title": "Cliente Satisfeito",
+    "content": "Proporcionar a melhor experiência ao cliente entendendo suas necessidades e expectativas.",
   },
   {
     "id": 3,
     "img": Img3,
-    "Icon": faGavel,
-    "title": "Tax consultanct & planning",
-    "subtitle": "Steve Thomas",
-    "subcontent": "Web developer",
-    "content": "Lorem Ipsum is simply dummy text of the & printing typesetting industry. Lorem Ipsum has been the industry's                standard dummy text ever since the 1500s, when an unknown",
+    "Icon": faShareAltSquare,
+    "title": "Compartilhar Conhecimento",
+    "content": "Base de conhecimento integrada com todos os canais de atendimento garantindo continuidade e sinergia nas interações.",
   }
 ]
 

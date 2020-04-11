@@ -12,17 +12,17 @@ function Blog() {
                 <div className="main-title-wrapper">
                     <Subtitle
                         Class="site-subtitle"
-                        Name="OUR MAIN MISSIONS"
+                        Name="SPEECH ANALYTICS"
                     />
                     <Titlespan2
                         Class="sitemain-subtitle"
-                        Name="Build Smart & Effective"
-                        Label="Management"
+                        Name="I.A. & Machine Learning"
+                        Label=""
                     />
 
                     <Description
                         Class="site-dec"
-                        Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
+                        Name="Ninguém conhece mais do seu negócio do que o seu cliente, por isso, a análise das chamadas pode se tornar seu maior aliado na busca da satisfação, perfil de clientes e desempenho de agentes. I.A. & Machine Learning te auxiliam no processamento desses dados e construção de modelos precisos, criando oportunidades para alavancar ganhos e reduzir custos.                        "
                     />
                 </div>
                 <Row>

@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
         return (
             <html>
                 <Head>
-                    <title>TouchWorks - React Landing Page</title>
+                    <title>TouchWorks Consulting</title>
                     <link rel="shortcut icon" href={Logo} />
                 </Head>
                 <body>

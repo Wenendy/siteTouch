@@ -15,32 +15,34 @@ function About() {
                         <div className="about-content-block main-title-wrapper">
                             <Subtitle
                                 Class="sitemain-subtitle"
-                                Name="Business solution"
+                                Name="Sobre Nós"
                             />
                             <Subtitle
                                 Class="site-subtitle2"
-                                Name="We gives you the best"
+                                Name="Seu cliente está feliz?"
                             />
 
                             <Description
                                 Class="about-dec about-dec-1"
-                                Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown dummy text of the printing"
+                                Name="Nossa filosofia é proporcionar a melhor experiência aos clientes e otimizar os processos de atendimento reduzindo os custos operacionais. Para isso desenvolvemos Chatbots e URAs Inteligentes de uma maneira que nenhuma outra empresa faz!"
                             />
                             <Titlespan2
                                 Class="about-twosub-title"
-                                Name="What we can help you"
-                                Label="Achive"
+                                Name="Nós somos experts em "
+                                Label="Satisfação"
                             />
                             <Description
                                 Class="about-dec"
-                                Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an"
+                                Name="Se você espera encantar seu cliente com o melhor atendimento por voz disponível no mercado, pode ter certeza que nós estamos aqui para te ajudar!"
                             />
+                            <a href="#contact">
                             <Button
                                 Class="button1 button4 btn"
-                                Name="HIRE US NOW"
+                                Name="VAMOS ENCANTAR JUNTOS"
                                 Title="gradient-color"
                                 BtnIcon="btn-icon gradient-color1"
                             />
+                            </a>
                         </div>
                     </Col>
                     <Col sm={6}>

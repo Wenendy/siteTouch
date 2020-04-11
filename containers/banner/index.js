@@ -9,6 +9,7 @@ import BannerBackgroundImages from '../../data/bannerimages';
 import './banner.scss';
 
 
+
 function Banner(props) {
     return (
         <section className={`banner-wrapper ${props.ChangeClass}`} id="home">
@@ -24,26 +25,26 @@ function Banner(props) {
                             <div className="banner-content">
                                 <Titlespan
                                     Class="banner-main-title"
-                                    Label="WE ARE"
-                                    Name="CREATIVE BUSINESS AGENCY"
+                                    Label="NÃO FIQUE PARA TRÁS,"
+                                    Name="AUTOMATIZE SEU ATENDIMENTO"
                                 />
                                 <Description
                                     Class="banner-dec"
-                                    Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+                                    Name="Mais vendas, menos custos e maior satisfação dos seus clientes"
                                 />
                                 <div className="banner-btn-wrapper">
-                                    <Button
-                                        Class="button1 button3 btn"
-                                        Name="LEARN MORE"
-                                    />
+                                <a href="#contact">
                                     <Button
                                         Class="button1 button4 btn"
-                                        Name="GET STARTED"
+                                        Name="AUTOMATIZAR"
                                         Title="gradient-color"
                                         BtnIcon="btn-icon gradient-color1"
+                                                                           
                                     />
+                                </a>
                                 </div>
                             </div>
+                            
                         </Col>
                         <Col md={6}>
                             <div className="banner-image">
@@ -53,7 +54,9 @@ function Banner(props) {
                                 />
                             </div>
                         </Col>
+                        
                     </Row>
+                    
                 </Container>
             </div>
         </section>

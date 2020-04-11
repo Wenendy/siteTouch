@@ -15,26 +15,24 @@ function Service() {
                         <div className="service-content-1 main-title-wrapper">
                             <Titlespan2
                                 Class="sitemain-subtitle"
-                                Name="Business"
-                                Label="Solutions"
-                            />
-                            <Subtitle
-                                Class="site-subtitle2"
-                                Name="We Provide The"
+                                Name="Soluções "
+                                Label="Empresariais"
                             />
                             <Title
                                 Class="service-title"
-                                Name="Our core features"
+                                Name="Nossos Serviços"
                             />
                             <Description
                                 Class="service-dec"
-                                Name="A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot."
+                                Name="Nossas soluções vão muito além do que seus olhos podem ver... Temos uma vasta experiência em customer success, user experience, inovação tecnológica, evolução de produtos, inteligência artificial, machine learning e muito mais."
                             />
-                            <Button
-                                Class="button1 btn button2 gradient-color"
-                                Name="Explore"
-                                BtnIcon="btn-icon"
-                            />
+                            <a href="#contact">
+                                <Button
+                                    Class="button1 btn button2 gradient-color"
+                                    Name="Descubra"
+                                    BtnIcon="btn-icon"
+                                />
+                            </a>
                         </div>
                     </Col>
                     <Col lg={7} md={8} className="service-block-content">

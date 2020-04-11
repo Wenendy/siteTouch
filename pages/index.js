@@ -6,7 +6,7 @@ const Home = () => {
 
         <div className="main-wrapper">
             <BusinessTheme
-                ThemeClass="demo1"
+                ThemeClass="demo3"
             />
         </div>
     )

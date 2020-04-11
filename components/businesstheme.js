@@ -37,13 +37,13 @@ const BusinessTheme = (props) => {
                     <Service />
                     <About />
                     <Blog />
-                    <Video />
+                    {/*<Video />
                     <Skills />
                     <Project />
                     <Portfolio />
-                    <Testimonial />
+                    <Testimonial />*/}
                     <Contact />
-                    <Brand />
+                    {/*<Brand />*/}
                     <Footer />
                     <CopyRight />
                     <ThemeColor />
@@ -53,7 +53,7 @@ const BusinessTheme = (props) => {
             <div className="theme-loader">
                 <Loader
                     type="Triangle"
-                    color="#e100ff "
+                    color="#e100ff"
                     height={150}
                     width={150}
                     timeout={3000}

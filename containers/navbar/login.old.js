@@ -10,7 +10,6 @@ import Facebook from '../../public/assets/images/login/facebook.png';
 import Twitter from '../../public/assets/images/login/twitter.png';
 import Check from '../../public/assets/images/login/check.png';
 import { X } from 'react-feather';
-import api from '../../src/api';
 
 // Firebase
 import firebase from 'firebase/app';
@@ -28,28 +27,38 @@ function Login(props) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setErrors] = useState('');
-    const [success, setSuccess] = useState(null);
+    const [errorCreate, setErrorsCreate] = useState('');
+    const [success, setSuccess] = useState(false);
+
+    const createAccountFirebase = e => {
+        e.preventDefault();
+        firebase
+            .auth()
+            .createUserWithEmailAndPassword(email, password)
+            .then(res => {
+                setSuccess(!success)
+                // if (res.user) Auth.setLoggedIn(true);
+            })
+            .catch(e => {
+                setErrorsCreate(e.message);
+            });
+    };
+
+    const loginWithFirebase = e => {
+        e.preventDefault();
+        firebase
+            .auth()
+            .signInWithEmailAndPassword(email, password)
+            .then(res => {
+                if (res.user) Auth.setLoggedIn(true);
+                setSuccess(success)
+            })
+            .catch(e => {
+                setErrors(e.message);
+            });
+    };
 
     
-    async function loginWithFirebase () {
-        const credentials = {
-            email: email, 
-            password: password
-            }
-
-            const response = await api.post('',credentials)
-
-            const user = response.data
-
-            await success(user)
-
-            console.log(response)
-
-        }
-  
-
-    
-
 
     return (
         <div className="login-register-outer">
@@ -62,11 +71,22 @@ function Login(props) {
                     <div className="tabfirst-block">
                         <Title Class="tab-title" Name="Bem Vindo a TouchWorks" />
                         <Description Class="tab-dec" Name="Faça o login para continuar" />
-
+                        {/*<button type="button" className="google login-btn1">
+                            <Image Path={GoogleImg} Class="login-img" />
+                            Sign in with Google
+                        </button>
+                        <button type="button" className="twitter login-btn1">
+                            <Image Path={Twitter} Class="login-img" />
+                            Sign in with Twitter
+                        </button>
+                        <button type="button" className="facebook login-btn1">
+                            <Image Path={Facebook} Class="login-img" />
+                            Sign in with Facebook
+                        </button>*/}
                         <div className="form-wrapper">
                             <FormGroup>
                                 <InputBox
-                                    Type="String"
+                                    Type="text"
                                     Name="email"
                                     PlaceHolder="Email Address"
                                     ChangeValue={setEmail}
@@ -87,7 +107,7 @@ function Login(props) {
                                 <CustomInput
                                     type="checkbox"
                                     id="exCustomCheckbox"
-                                    label="Lembrar de Mim"
+                                    label="Remember Me"
                                 />
                                 <button type="button" className="forget-password">Esqueceu a senha?</button>
                             </FormGroup>
@@ -95,7 +115,43 @@ function Login(props) {
                         </div>
                     </div>
                 </TabPanel>
-                
+                <TabPanel>
+                    <div className="tabfirst-block">
+                        <Title Class="tab-title" Name="Welcome TouchWorks" />
+                        <Description Class="tab-dec" Name="Just register to join with us" />
+                        <div className="form-wrapper">
+                            <FormGroup>
+                                <InputBox
+                                    Type="text"
+                                    Name="name"
+                                    PlaceHolder="Full Name"
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <InputBox
+                                    Type="text"
+                                    Name="email"
+                                    PlaceHolder="Email Address"
+                                    ChangeValue={setEmail}
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <InputBox
+                                    Type="password"
+                                    Name="password"
+                                    PlaceHolder="Password"
+                                    ChangeValue={setPassword}
+                                />
+                                <span className="errorFirebase">{errorCreate}</span>
+                            </FormGroup>
+                            <button
+                                type="button"
+                                className="login-btn gradient-color"
+                                onClick={createAccountFirebase}
+                            >Register</button>
+                        </div>
+                    </div>
+                </TabPanel>
 
             </Tabs>
             <div className="login-close gradient-color" onClick={props.Click}>
@@ -109,11 +165,11 @@ function Login(props) {
                         </div>
                         <div className="login-success-content">
                             <Title Class="login-success-title" Name="Success" />
-                            <Description Class="login-success-dec" Name="Aguarde..." />
+                            <Description Class="login-success-dec" Name="Thank you for visit our website." />
                             <button
                                 type="button"
                                 className="login-success-btn"
-                                onClick={() => Router.push('')}
+                                onClick={() => Router.push('./private')}
                             > Ok
                             </button>
                         </div>

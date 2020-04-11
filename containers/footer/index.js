@@ -21,13 +21,13 @@ function Footer() {
                                 <Image Path={logo} Class="footer-logo" />
                                 <Description
                                     Class="footer-dec"
-                                    Name="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown"
+                                    Name="A solução que sua empresa precisa com a qualidade que o seu cliente merece. Keep in touch with your customer"
                                 />
                             </div>
                         </Col>
                         <Col lg={3} sm={6}>
                             <div className="footer-contact-us">
-                                <Title Class="footer-title" Name="Contact Us" />
+                                <Title Class="footer-title" Name="Contato" />
                                 <div className="footer-details-link">
                                     <ul>
                                         <li>
@@ -37,7 +37,7 @@ function Footer() {
                                                 </span>
                                                 <Title
                                                     Class="footer-link"
-                                                    Name="Office No - 115 , Street No - 05 , NY, USA"
+                                                    Name="Osiris de Camargo Street, 100 - São Paulo"
                                                 />
                                             </a>
                                         </li>
@@ -48,7 +48,7 @@ function Footer() {
                                                 </span>
                                                 <Title
                                                     Class="footer-link footer-email"
-                                                    Name="example@email.com"
+                                                    Name="comercial@touchworks.com.br"
                                                 />
                                             </a>
                                         </li>
@@ -57,7 +57,7 @@ function Footer() {
                                                 <span>
                                                     <Icon icon={faPhoneVolume} />
                                                 </span>
-                                                <Title Class="footer-link" Name="+1 123 - 564 - 7890" />
+                                                <Title Class="footer-link" Name="+55 11 94721 - 2865" />
                                             </a>
                                         </li>
                                     </ul>
@@ -67,11 +67,11 @@ function Footer() {
                         <Col lg={2} sm={6}>
                             <div className="footer-about-us">
                                 <div className="footer-about-outer">
-                                    <Title Class="footer-title" Name="About Us" />
+                                    <Title Class="footer-title" Name="Mapa" />
                                     <div className="footer-details-link">
                                         <ul>
                                             <li>
-                                                <a href="#link">
+                                                <a href="#">
                                                     <ArrowRightCircle/>
                                                     <Title
                                                         Class="footer-link footer-arrow"
@@ -80,34 +80,25 @@ function Footer() {
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#link">
+                                                <a href="#about">
                                                 <ArrowRightCircle/>
                                                     <Title
                                                         Class="footer-link footer-arrow"
-                                                        Name="About Us"
+                                                        Name="Sobre"
                                                     />
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#link">
+                                                <a href="#service">
                                                 <ArrowRightCircle/>
                                                     <Title
                                                         Class="footer-link footer-arrow"
-                                                        Name="Features"
+                                                        Name="Serviços"
                                                     />
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#link">
-                                                <ArrowRightCircle/>
-                                                    <Title
-                                                        Class="footer-link footer-arrow"
-                                                        Name="Services"
-                                                    />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#link">
+                                                <a href="#contact">
                                                 <ArrowRightCircle/>
                                                     <Title
                                                         Class="footer-link footer-arrow"
@@ -122,7 +113,7 @@ function Footer() {
                         </Col>
                         <Col lg={3} sm={6}>
                             <div className="footer-newsletter">
-                                <Title Class="footer-title" Name="Stay with us" />
+                                <Title Class="footer-title" Name="Fique por dentro das novidades" />
                                 <div className="form-group">
                                     <InputBox
                                         Type="text"
@@ -133,7 +124,7 @@ function Footer() {
                                         <Icon icon={faPaperPlane} />
                                     </span>
                                 </div>
-                                <Title Class="footer-social-title" Name="Social icon" />
+                                <Title Class="footer-social-title" Name="Segue lá" />
                                 <ul className="social-wrapper">
                                     <li>
                                         <a href="/index">
@@ -150,7 +141,7 @@ function Footer() {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/index">
+                                        <a href="https://www.linkedin.com/company/touchworks-consulting" >
                                             <span>
                                                 <Icon icon={faLinkedin} />
                                             </span>

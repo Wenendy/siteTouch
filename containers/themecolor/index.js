@@ -81,7 +81,7 @@ function ThemeColor() {
     }
     return (
         <div id="themecontrol" className={color ? 'open' : ''}>
-            <Title Class="title" Name="Select Your Color" />
+            <Title Class="title" Name="Selecione uma cor" />
             <ul className="pattern">
                 <li><span className={`color1`} onClick={activeClick}></span></li>
                 <li><span className={`color2`} onClick={activeClick}></span></li>

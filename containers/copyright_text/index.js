@@ -9,7 +9,7 @@ function CopyRight() {
             <Container>
                 <div className="footer-copyright-text">
                     <div className="copyright-link">
-                        <span>© Copyright 2019 busines. All Rights Reserved</span>
+                        <span>© Copyright 2019 TouchWorks. All Rights Reserved</span>
 
                         <span> Term & Condition / Privacy & Policy</span>
                     </div>

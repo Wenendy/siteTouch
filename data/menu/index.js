@@ -6,20 +6,20 @@ const Menudata = [
     },
     {
         id: 2,
-        title: 'Service',
+        title: 'Serviços',
         href: '#service'
     },
     {
         id: 3,
-        title: 'About',
+        title: 'Sobre Nós',
         href: '#about'
     },
     {
         id: 4,
-        title: 'Blog',
+        title: 'Speech Analytics',
         href: '#blog'
     },
-    {
+    /*{
         id: 5,
         title: 'Video',
         href: '#video'
@@ -44,10 +44,10 @@ const Menudata = [
         id: 9,
         title: 'Testimonial',
         href: '#testimonial'
-    },
+    },*/
     {
         id: 10,
-        title: 'Contact',
+        title: 'Contato',
         href: '#contact'
     }
 ]
